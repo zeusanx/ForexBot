@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/marketFragment"     android:icon="@android:drawable/ic_menu_compass"         android:title="Market"/>
+    <item android:id="@+id/chartFragment"      android:icon="@android:drawable/ic_menu_sort_by_size"    android:title="Chart"/>
+    <item android:id="@+id/tradesFragment"     android:icon="@android:drawable/ic_menu_agenda"          android:title="Trades"/>
+    <item android:id="@+id/performanceFragment" android:icon="@android:drawable/ic_menu_recent_history" android:title="Performance"/>
+</menu>

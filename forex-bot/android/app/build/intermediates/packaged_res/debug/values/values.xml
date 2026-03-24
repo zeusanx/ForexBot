@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mt5_bg">#131722</color>
+    <color name="mt5_blue">#2196F3</color>
+    <color name="mt5_border">#2A3147</color>
+    <color name="mt5_card">#1A1F2E</color>
+    <color name="mt5_green">#26A69A</color>
+    <color name="mt5_header">#0D1117</color>
+    <color name="mt5_red">#EF5350</color>
+    <color name="mt5_surface">#1E2433</color>
+    <color name="mt5_text">#D1D4DC</color>
+    <color name="mt5_text_sec">#787B86</color>
+    <color name="mt5_yellow">#FFB300</color>
+    <color name="nav_selected">#26A69A</color>
+    <color name="nav_unselected">#787B86</color>
+    <string name="app_name">ForexBot</string>
+    <style name="MT5EditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/mt5_text</item>
+        <item name="android:textColorHint">@color/mt5_text_sec</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+    <style name="Theme.ForexBot" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mt5_green</item>
+        <item name="colorPrimaryVariant">@color/mt5_surface</item>
+        <item name="colorOnPrimary">@color/mt5_bg</item>
+        <item name="colorSecondary">@color/mt5_blue</item>
+        <item name="android:colorBackground">@color/mt5_bg</item>
+        <item name="colorSurface">@color/mt5_surface</item>
+        <item name="colorOnSurface">@color/mt5_text</item>
+        <item name="android:statusBarColor">@color/mt5_header</item>
+        <item name="android:navigationBarColor">@color/mt5_header</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="editTextStyle">@style/MT5EditText</item>
+    </style>
+</resources>

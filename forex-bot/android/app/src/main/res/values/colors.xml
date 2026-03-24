@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mt5_bg">#131722</color>
+    <color name="mt5_surface">#1E2433</color>
+    <color name="mt5_card">#1A1F2E</color>
+    <color name="mt5_border">#2A3147</color>
+    <color name="mt5_text">#D1D4DC</color>
+    <color name="mt5_text_sec">#787B86</color>
+    <color name="mt5_green">#26A69A</color>
+    <color name="mt5_red">#EF5350</color>
+    <color name="mt5_yellow">#FFB300</color>
+    <color name="mt5_blue">#2196F3</color>
+    <color name="mt5_header">#0D1117</color>
+    <color name="nav_selected">#26A69A</color>
+    <color name="nav_unselected">#787B86</color>
+</resources>

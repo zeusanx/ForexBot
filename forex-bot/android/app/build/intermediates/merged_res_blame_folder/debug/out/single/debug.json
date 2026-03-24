@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\drawable_circle_indicator.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\drawable\\circle_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_fragment_market.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_market.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_fragment_performance.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_performance.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_fragment_trades.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_trades.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_item_trade.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\item_trade.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\drawable_bg_divider.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\drawable\\bg_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_fragment_chart.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\drawable_badge_background.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\drawable\\badge_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-merged_res-50:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.forexbot.app-merged_res-50:/layout_item_trade.xml.flat",
+        "source": "com.forexbot.app-main-52:/layout/item_trade.xml"
+    }
+]

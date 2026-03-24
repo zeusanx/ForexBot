@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\fragment_performance.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_performance.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\item_trade.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\item_trade.xml"
+    },
+    {
+        "merged": "com.forexbot.app-mergeDebugResources-49:/layout/item_trade.xml",
+        "source": "com.forexbot.app-main-52:/layout/item_trade.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\fragment_market.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_market.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\fragment_trades.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_trades.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\fragment_chart.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\fragment_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-mergeDebugResources-49:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Home\\.gradle\\daemon\\8.5\\com.forexbot.app-main-52:\\layout\\activity_login.xml"
+    }
+]

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mt5_bg"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Column headers -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="36dp"
+            android:background="@color/mt5_surface" android:orientation="horizontal"
+            android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Symbol"
+                android:textColor="@color/mt5_text_sec" android:textSize="11sp"/>
+            <TextView android:layout_width="64dp" android:layout_height="wrap_content"
+                android:text="Bid" android:textColor="@color/mt5_text_sec"
+                android:textSize="11sp" android:gravity="end"/>
+            <TextView android:layout_width="64dp" android:layout_height="wrap_content"
+                android:text="Ask" android:textColor="@color/mt5_text_sec"
+                android:textSize="11sp" android:gravity="end"/>
+            <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+
+        <!-- EUR/USD Live Row -->
+        <LinearLayout android:id="@+id/row_eurusd"
+            android:layout_width="match_parent" android:layout_height="58dp"
+            android:background="@color/mt5_card" android:orientation="horizontal"
+            android:gravity="center_vertical" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:clickable="true" android:focusable="true">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="EUR/USD" android:textColor="@color/mt5_text"
+                        android:textSize="15sp" android:fontFamily="sans-serif-medium"
+                        android:layout_marginEnd="8dp"/>
+                    <TextView android:id="@+id/tv_bot_status_badge"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="IDLE" android:textColor="#FFFFFF" android:textSize="9sp"
+                        android:paddingHorizontal="6dp" android:paddingVertical="2dp"
+                        android:background="@drawable/badge_background"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Euro / US Dollar — tap to view chart"
+                    android:textColor="@color/mt5_text_sec" android:textSize="10sp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_row_bid" android:layout_width="64dp"
+                android:layout_height="wrap_content" android:text="—"
+                android:textColor="@color/mt5_red" android:textSize="14sp"
+                android:fontFamily="monospace" android:gravity="end"/>
+            <TextView android:id="@+id/tv_row_ask" android:layout_width="64dp"
+                android:layout_height="wrap_content" android:text="—"
+                android:textColor="@color/mt5_green" android:textSize="14sp"
+                android:fontFamily="monospace" android:gravity="end"/>
+            <TextView android:id="@+id/tv_change_indicator"
+                android:layout_width="24dp" android:layout_height="wrap_content"
+                android:text="▲" android:textColor="@color/mt5_green"
+                android:textSize="14sp" android:gravity="end"/>
+        </LinearLayout>
+
+        <!-- Account Summary -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ACCOUNT" android:textColor="@color/mt5_text_sec"
+            android:textSize="10sp" android:paddingStart="16dp" android:paddingTop="14dp"
+            android:paddingBottom="6dp" android:letterSpacing="0.12"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp"
+            android:layout_marginBottom="4dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="64dp"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/mt5_surface" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="BALANCE" android:textColor="@color/mt5_text_sec" android:textSize="10sp"/>
+                    <TextView android:id="@+id/tv_balance" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="$10,000.00"
+                        android:textColor="@color/mt5_text" android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="64dp"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/mt5_surface" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="PROFIT" android:textColor="@color/mt5_text_sec" android:textSize="10sp"/>
+                    <TextView android:id="@+id/tv_pnl" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="+$0.00"
+                        android:textColor="@color/mt5_green" android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- SL / TP Settings -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="RISK SETTINGS  (before starting)" android:textColor="@color/mt5_text_sec"
+            android:textSize="10sp" android:paddingStart="16dp" android:paddingTop="14dp"
+            android:paddingBottom="6dp" android:letterSpacing="0.12"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp"
+            android:layout_marginBottom="4dp">
+
+            <!-- Target Profit -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Target Profit ($)" android:textColor="@color/mt5_green"
+                    android:textSize="11sp" android:layout_marginBottom="4dp"/>
+                <EditText android:id="@+id/et_target_profit"
+                    android:layout_width="match_parent" android:layout_height="44dp"
+                    android:hint="e.g. 20" android:text="20"
+                    android:textColor="@color/mt5_text" android:textColorHint="@color/mt5_text_sec"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="12dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" android:fontFamily="monospace"/>
+            </LinearLayout>
+
+            <!-- Stop Loss -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Max Loss / SL ($)" android:textColor="@color/mt5_red"
+                    android:textSize="11sp" android:layout_marginBottom="4dp"/>
+                <EditText android:id="@+id/et_max_loss"
+                    android:layout_width="match_parent" android:layout_height="44dp"
+                    android:hint="e.g. 7" android:text="7"
+                    android:textColor="@color/mt5_text" android:textColorHint="@color/mt5_text_sec"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="12dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" android:fontFamily="monospace"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- SL/TP active status label -->
+        <TextView android:id="@+id/tv_sl_tp_status"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="TP: $20  |  SL: $7"
+            android:textColor="@color/mt5_yellow" android:textSize="11sp"
+            android:paddingStart="16dp" android:paddingBottom="4dp"
+            android:visibility="gone"/>
+
+        <!-- Bot Control -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="BOT CONTROL" android:textColor="@color/mt5_text_sec"
+            android:textSize="10sp" android:paddingStart="16dp" android:paddingTop="10dp"
+            android:paddingBottom="6dp" android:letterSpacing="0.12"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_stop"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp" android:layout_marginBottom="4dp"
+            android:text="START BOT" android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            app:backgroundTint="@color/mt5_green" app:cornerRadius="8dp"/>
+
+        <!-- EMA Info -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="EMA STRATEGY" android:textColor="@color/mt5_text_sec"
+            android:textSize="10sp" android:paddingStart="16dp" android:paddingTop="14dp"
+            android:paddingBottom="6dp" android:letterSpacing="0.12"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp"
+            android:paddingBottom="16dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="60dp"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/mt5_surface" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="EMA(9)" android:textColor="@color/mt5_yellow" android:textSize="10sp"/>
+                    <TextView android:id="@+id/tv_ema_short" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="—"
+                        android:textColor="@color/mt5_text" android:textSize="12sp"
+                        android:fontFamily="monospace"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="60dp"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/mt5_surface" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="EMA(21)" android:textColor="@color/mt5_blue" android:textSize="10sp"/>
+                    <TextView android:id="@+id/tv_ema_long" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="—"
+                        android:textColor="@color/mt5_text" android:textSize="12sp"
+                        android:fontFamily="monospace"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="60dp"
+                android:layout_weight="1" android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/mt5_surface" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="SIGNAL" android:textColor="@color/mt5_text_sec" android:textSize="10sp"/>
+                    <TextView android:id="@+id/tv_signal" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="NONE"
+                        android:textColor="@color/mt5_yellow" android:textSize="11sp"
+                        android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ForexBot" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mt5_green</item>
+        <item name="colorPrimaryVariant">@color/mt5_surface</item>
+        <item name="colorOnPrimary">@color/mt5_bg</item>
+        <item name="colorSecondary">@color/mt5_blue</item>
+        <item name="android:colorBackground">@color/mt5_bg</item>
+        <item name="colorSurface">@color/mt5_surface</item>
+        <item name="colorOnSurface">@color/mt5_text</item>
+        <item name="android:statusBarColor">@color/mt5_header</item>
+        <item name="android:navigationBarColor">@color/mt5_header</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="editTextStyle">@style/MT5EditText</item>
+    </style>
+    <style name="MT5EditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/mt5_text</item>
+        <item name="android:textColorHint">@color/mt5_text_sec</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+</resources>

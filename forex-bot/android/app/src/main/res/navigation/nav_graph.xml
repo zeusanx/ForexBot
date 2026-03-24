@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/marketFragment">
+    <fragment android:id="@+id/marketFragment"     android:name="com.forexbot.ui.MarketFragment"     android:label="Market"/>
+    <fragment android:id="@+id/chartFragment"      android:name="com.forexbot.ui.ChartFragment"      android:label="Chart"/>
+    <fragment android:id="@+id/tradesFragment"     android:name="com.forexbot.ui.TradesFragment"     android:label="Trades"/>
+    <fragment android:id="@+id/performanceFragment" android:name="com.forexbot.ui.PerformanceFragment" android:label="Performance"/>
+</navigation>
